@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopNest</title>
+
+    <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+  }
+
+  #root {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2563eb;
+  }
+
+  nav {
+    text-align: center;
+    padding: 15px;
+    background: #111827;
+    border-radius: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  h2 {
+    margin-top: 35px;
+  }
+
+  #products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  #products > div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  #products > div {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+#products > div:hover {
+  transform: translateY(-5px);
+}
+
+#products img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#products h3 {
+  margin: 15px 0 8px;
+}
+
+#products p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#products button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.dark-mode {
+  background: #111827;
+  color: white;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.dark-mode #products > div {
+  background: #1f2937;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode select {
+  background: #374151;
+  color: white;
+  border-color: #555;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+  background: #111827;
+  color: white;
+  border-radius: 12px;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+footer p {
+  margin: 8px 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  margin: 30px 0;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-radius: 15px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  background: white;
+  color: #2563eb;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+</style>
+
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
